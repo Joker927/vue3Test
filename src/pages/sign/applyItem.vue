@@ -7,7 +7,6 @@
 <script setup>
 import { ref, reactive, nextTick, onMounted, getCurrentInstance, inject } from 'vue'
 import { useCounterStore } from '@/stores/counter'
-import { elementsVerify } from '../../../../../seal_link/src/services/common'
 
 const counter = useCounterStore()
 console.log('🚀 ~ file: applyItem.vue:12 ~ counter:', counter)
