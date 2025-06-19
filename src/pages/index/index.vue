@@ -4,7 +4,7 @@
             <text class="title">Hello</text>
         </view>
 
-        <view class="numKeyboard" @click="handleShowOrClose"> 数字键盘123 </view>
+        <view class="numKeyboard" @click="handleShowOrClose"> 数字键盘1234 </view>
 
         <mi-payKeyboard isShuffleBoard v-if="payKeyboardShow" @success="handleKeyboardSuccess" @close="handleShowOrClose"></mi-payKeyboard>
     </view>
