@@ -4,8 +4,9 @@ export function https(config) {
     config.url = baseUrl + config.url // 请求地址
     let promise = new Promise(function (resolve, reject) {
         uni.request(config).then(res => {
+            console.log("🚀 ~ uni.request ~ res:", res)
             if (res.statusCode == 200) {
-                if (res.data.CODE != 2000) {
+                if (res.data.code != 200) {
                     reject(res.data)
                 } else {
                     resolve(res.data)

@@ -13,7 +13,11 @@
 <script setup>
 import { onReady, onLoad } from '@dcloudio/uni-app'
 import { ref } from 'vue'
-onLoad(() => {})
+import { getUserList } from '@/services/common.js'
+onLoad(async () => {
+    let a = await getUserList()
+    console.log('🚀 ~ onLoad ~ a:', a)
+})
 
 const goSign = () => {
     uni.navigateTo({

@@ -86,9 +86,8 @@
             "port": 9300,
             "disableHostCheck": true,
             "proxy": {
-                "/appapi": {
-                    "target": "http://192.168.28.112:9108",
-                    // "target" : "http://192.168.28.213:18114",
+                "/nestApi": {
+                    "target": "http://192.168.29.154:3100",
                     "changeOrigin": true,
                     "secure": false
                 }
