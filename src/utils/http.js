@@ -1,7 +1,7 @@
 import { baseUrl } from '@/config/env.js'
 
 export function https(config) {
-    config.url = baseUrl + config.url // 请求地址
+    config.url = import.meta.env.VITE_API_BASE_URL + config.url // 请求地址
     let promise = new Promise(function (resolve, reject) {
         uni.request(config).then(res => {
             console.log("🚀 ~ uni.request ~ res:", res)
