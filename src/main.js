@@ -1,6 +1,7 @@
 import { createSSRApp } from "vue";
 import * as Pinia from 'pinia';
 import uviewPlus from 'uview-plus'
+import './uni.scss';
 
 import { goBack } from './utils/utils.js'
 

@@ -5,5 +5,13 @@ export default defineConfig({
   plugins: [
     uni(),
   ],
+  css: {
+    postcss: {
+      plugins: [
+        require('tailwindcss'),
+        require('autoprefixer')
+      ]
+    }
+  },
   envDir: './envDir'
 })
