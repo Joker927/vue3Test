@@ -27,7 +27,6 @@
 <script setup>
 import { ref, reactive, nextTick, onMounted, getCurrentInstance, provide, watch } from 'vue'
 import { onReady, onLoad } from '@dcloudio/uni-app'
-import { getUser } from '@/services/common.js'
 //引入组件
 import Detail from './detail.vue'
 import ApplyList from './applyList.vue'
