@@ -415,7 +415,7 @@ export default {
             try {
                 // 模拟注册API调用
                 await createUser({
-                    username: this.username,
+                    userName: this.username,
                     email: this.email,
                     phone: this.phone,
                     password: this.password,
