@@ -2,6 +2,16 @@ import { baseUrl } from '@/config/env.js'
 
 export function https(config) {
     config.url = import.meta.env.VITE_API_BASE_URL + config.url // 请求地址
+
+    config.header = {
+        'content-type': 'application/json',
+    }
+
+    const token = uni.getStorageSync('token')
+    if (token) {
+        config.header.authorization = 'Bearer ' + token
+    }
+
     let promise = new Promise(function (resolve, reject) {
         uni.request(config).then(res => {
             console.log("🚀 ~ uni.request ~ res:", res)
