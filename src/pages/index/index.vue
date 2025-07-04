@@ -251,27 +251,27 @@ export default {
         // 加载数据
         loadData() {
             this.isLoading = true
-
-            // 模拟API请求
             setTimeout(() => {
                 const filteredData = this.mockData.filter(item => this.activeTab === 'recommend' || item.category === this.activeTab)
-
                 this.distributeData(filteredData)
                 this.isLoading = false
+                this.$nextTick(() => {
+                    this.lazyLoadImages()
+                })
             }, 1000)
         },
 
         // 加载更多数据
         loadMoreData() {
             if (this.isLoading) return
-
             this.isLoading = true
-
-            // 模拟加载更多
             setTimeout(() => {
                 const moreData = this.generateMoreData()
                 this.distributeData([...this.leftColumnData, ...this.rightColumnData, ...moreData])
                 this.isLoading = false
+                this.$nextTick(() => {
+                    this.lazyLoadImages()
+                })
             }, 1000)
         },
 
