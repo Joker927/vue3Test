@@ -24,6 +24,20 @@
             }
         },
         {
+            "path": "pages/index/bloggerDetail",
+            "style": {
+                "titleNView": false,
+                "navigationStyle": "custom"
+            }
+        },
+        {
+            "path": "pages/article/detail",
+            "style": {
+                "titleNView": false,
+                "navigationStyle": "custom"
+            }
+        },
+        {
             "path": "pages/index/test",
             "style": {
                 "titleNView": false,
