@@ -38,6 +38,13 @@
             }
         },
         {
+            "path": "pages/article/add",
+            "style": {
+                "titleNView": false,
+                "navigationStyle": "custom"
+            }
+        },
+        {
             "path": "pages/index/test",
             "style": {
                 "titleNView": false,
