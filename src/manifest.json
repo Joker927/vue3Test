@@ -83,7 +83,7 @@
             "enable": false
         },
         "devServer": {
-            "port": 9300,
+            "port": 9301,
             "disableHostCheck": true,
             "proxy": {
                 "/nestApi": {

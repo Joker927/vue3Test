@@ -71,6 +71,13 @@
                 "titleNView": false,
                 "navigationStyle": "custom"
             }
+        },
+        {
+            "path": "pages/note/add",
+            "style": {
+                "titleNView": false,
+                "navigationStyle": "custom"
+            }
         }
     ],
     "globalStyle": {
